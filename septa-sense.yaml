@@ -1,8 +1,6 @@
 substitutions:
-  # Name
   name: "septa-sense"
   sensor_prefix: "SeptaSense"
-  # Sensor Limits
   limit_pm_2_5: "25.0"
   limit_pm_10_0: "40.0"
   limit_co2: "1500.0"
