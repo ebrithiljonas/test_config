@@ -1,7 +1,7 @@
 substitutions:
   # Name
   name: "septa-sense"
-  sensor_prefix: "Septa Sense"
+  sensor_prefix: "SeptaSense"
   # Sensor Limits
   limit_pm_2_5: "25.0"
   limit_pm_10_0: "40.0"
@@ -13,6 +13,7 @@ substitutions:
 
 esphome:
   name: ${name}
+  comment: "SpetaSense Air Quality Sensor"
   project:
     name: ebrithil.septa-sense
     version: "0.6"
@@ -27,6 +28,9 @@ wifi:
     password: ${default_pw}
 
 captive_portal:
+
+dashboard_import:
+  package_import_url: github://ebrithiljonas/test_config/septa-sense.yaml
 
 logger:
   level: INFO
